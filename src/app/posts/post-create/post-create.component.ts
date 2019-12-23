@@ -8,7 +8,6 @@ export class PostCreateComponent {
  newPost = 'NO CONTENT';
 
   onAddPost(postInput: HTMLTextAreaElement) {
-    console.log(postInput)
-    this.newPost = 'Current user post';
+    this.newPost = postInput.value;
   }
 }
